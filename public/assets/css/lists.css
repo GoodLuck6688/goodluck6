@@ -1,0 +1,290 @@
+main.content{
+    padding-top: 90px;
+}
+.pageBanner {
+    position: relative;
+}
+.pageBanner img {
+    width: 100%;
+    height:250px;
+}
+.pageBanner .name {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: 250px;
+    height: 45px;
+    margin-left: -125px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+.pageBanner .txt {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    width: 1000px;
+    margin-left: -500px;
+}
+.pageBanner .name em {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 24px;
+    height: 1px;
+    background: #fff;
+    margin-left: -12px;
+    font-style: normal;
+}
+.wal {
+    width: 1200px;
+    margin: 0px auto 50px;
+}
+.pageNow {
+    text-align: right;
+    height: 74px;
+    line-height: 74px;
+    font-size: 14px;
+    color: #999;
+}
+.pageNav1 {
+    background: #f2f2f2;
+    height: 50px;
+    margin-bottom: 70px;
+}
+.pageNav1 .list {
+    padding-left: 35px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    list-style-type: disc;
+}
+li {
+    list-style-position: outside;
+    list-style-type: none;
+    display: list-item;
+}
+.pageNav1 li {
+    float: left;
+    font-size: 16px;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+}
+.clear_f {
+    clear: both;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    _display: inherit;
+}
+.pageNav1 li a:hover, .pageNav1 li .aNow {
+    background: url(../img/nimg22_1.jpg) center bottom no-repeat;
+    color: #3250aa;
+}
+.pageNav1 li a {
+    color: #000;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+a:link {
+    text-decoration: none;
+    outline: none;
+}
+.pageTitle {
+    text-align: center;
+    padding: 70px 0 50px;
+}
+.pageTitle2 {
+    padding: 10px 0 50px;
+}
+
+.pageTitle .txt1 {
+    font-size: 28px;
+    color: #162d59;
+}
+.pageTitle .txt2 {
+    font-size: 12px;
+    color: #b7b7b7;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.network .content1 {
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 70px;
+}
+.network .list {
+    width: 913px;
+    margin: 0 auto;
+    border-top: #dcdcdc solid 1px;
+    border-left: #dcdcdc solid 1px;
+}
+.network .list li {
+    float: left;
+    width: 304px;
+    height: 218px;
+    text-align: center;
+    overflow: hidden;
+}
+.box1 {
+    position: relative;
+    border-radius: 0px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.network .list li .box1 {
+    border-right: #dcdcdc solid 1px;
+    border-bottom: #dcdcdc solid 1px;
+    height: 218px;
+}
+.network .list li .ico {
+    padding: 30px 0 10px;
+}
+.network .list li .ico img {
+    border: 0px;
+    vertical-align: middle;
+}
+.network .list li h2 {
+    font-size: 18px;
+    color: #4e4e4e;
+    padding: 0px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    margin: 0px;
+}
+.network .list li p {
+     font-size: 14px;
+     line-height: 22px;
+     padding: 0px;
+     margin: 0px;
+     color: #666;
+}
+
+.network .imgDiv {
+    padding-top: 100px;
+    text-align: center;
+}
+img {
+    border: 0px;
+    vertical-align: middle;
+}
+/*lists*/
+.news {
+    padding-bottom: 80px;
+}
+.news .list li {
+    padding: 40px 0;
+    background: url(../img/line4.png) bottom repeat-x;
+}
+.news .list li .contentBox {
+    height: 201px;
+    position: relative;
+    padding: 0 400px 0 300px;
+    overflow: hidden;
+}
+.news .list li .timeDiv {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 276px;
+    height: 109px;
+    background: url(../img/nimg221Bg.png) left no-repeat;
+    font-size: 60px;
+    color: #333;
+    line-height: 109px;
+}
+.news .list li .timeDiv span {
+    padding-left: 40px;
+    display: block;
+}
+.news .list li .timeDiv em {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 28px;
+    color: #cbcbcb;
+}
+.news .list li .imgDiv {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+img {
+    border: 0px;
+    vertical-align: middle;
+}
+.news .list li .name1 {
+    padding-top: 0px;
+    font-size: 18px;
+    height: 24px;
+    overflow: hidden;
+    padding-left: 15px;
+}
+.news .list li .name1 a {
+    color: #333;
+}
+a,a:hover, a:active, a:focus{
+    color:#3250aa;
+}
+.news .list li .name1 a:visited {
+    text-decoration: none;
+    outline: none;
+}
+.news .list li .name1 a:link {
+    text-decoration: none;
+    outline: none;
+}
+.news .list li .time {
+    padding: 5px 0 20px;
+    font-size: 14px;
+    color: #999;
+}
+.news .list li .content {
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+    overflow: hidden;
+    height: 72px;
+    padding-right: 20px;
+}
+/*newshow*/
+.newShow .name {
+    font-size: 28px;
+    color: #333;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.newShow .top {
+    height: 50px;
+    overflow: hidden;
+    border-bottom: #ddd solid 1px;
+    position: relative;
+}
+.newShow .time {
+    font-size: 14px;
+    color: #999;
+}
+.newShow .time em {
+    padding-right: 36px;
+}
+.newShow .content {
+    line-height: 30px;
+    font-size: 14px;
+    padding: 50px 0;
+}

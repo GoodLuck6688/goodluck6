@@ -1,0 +1,42 @@
+<link href="__CDN__/assets/css/lists.css?v={$Think.config.site.version}" rel="stylesheet">
+
+<div class="pageBanner">
+    <div class="imgDiv"><img src="http://www.huaxunchina.cn/newskin/images/limg1920_4.jpg"></div>
+    <div class="name">{$cate['name']}<em></em></div>
+    <div class="txt">{$cate['description']}</div>
+</div>
+
+<div class="wal">
+    <div class="pageNow"></div>
+    <div class="pageNav1">
+        <div class="list">
+            <ul>
+                {foreach $cates as $v}
+
+                <li><a href="{:url('index/index/lists',['cate'=>$v['type']])}" class="{if $v['type']== $c}aNow{/if}">{$v.name}</a></li>
+
+                {/foreach}
+            </ul>
+            <div class="clear_f"></div>
+        </div>
+    </div>
+    <!--<div class="pageTitle pageTitle2">-->
+        <!--<div class="txt1">{$cate['name']}</div>-->
+        <!--<div class="txt2">{$cate['nickname']}</div>-->
+    <!--</div>-->
+    <div class="newShow">
+        <div class="name">{$row.name}</div>
+        <div class="top">
+            <div class="time"><em>发布时间：{$row.createtime|date='Y-m-d H:i:s',###}</em></div>
+            <!--<div class="share">-->
+                <!--<div class="bshare-custom"><div class="bsPromo bsPromo2"></div><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>-->
+            <!--</div>-->
+        </div>
+        <div class="content">
+            <p style="text-align: center;"><img src="{$row.image}" alt="" style="height: auto;">&nbsp;</p>
+            <div>
+                {$row.content}
+            </div>
+    </div>
+
+</div>

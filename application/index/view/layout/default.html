@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {include file="common/meta" /}
+        <link href="__CDN__/assets/css/user.css?v={$Think.config.site.version}" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container navbar-my">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{:url('/')}" style="padding:6px 15px;"><img src="{$site.Logo}" style="height:70px;" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        {foreach :getConfigGroup('nav') as $k => $v}
+                        <li>
+                            <a href="/#{$v.extend}" class="my-nav {if $k == 0 }active{/if}" id="{$v.extend}tip">
+                                <i class="fa fa-minus {if $k != 0 }hide{/if}"></i>
+                                <br>
+                                <strong>{$v.value}</strong><br>
+                                <span class="e-nav">{$v.name}</span>
+                            </a>
+                        </li>
+                        {/foreach}
+                        <!--<li class="dropdown">-->
+                            <!--{if $user}-->
+                            <!--<a href="{:url('user/index')}" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 10px;height: 50px;">-->
+                                <!--<span class="avatar-img"><img src="{$user.avatar}" alt=""></span>-->
+                            <!--</a>-->
+                            <!--{else /}-->
+                            <!--<a href="{:url('user/index')}" class="dropdown-toggle" data-toggle="dropdown">{:__('User center')} <b class="caret"></b></a>-->
+                            <!--{/if}-->
+                            <!--<ul class="dropdown-menu">-->
+                                <!--{if $user}-->
+                                <!--<li><a href="{:url('user/index')}"><i class="fa fa-user-circle"></i>{:__('User center')}</a></li>-->
+                                <!--<li><a href="{:url('user/profile')}"><i class="fa fa-user-o"></i>{:__('Profile')}</a></li>-->
+                                <!--<li><a href="{:url('user/changepwd')}"><i class="fa fa-key"></i>{:__('Change password')}</a></li>-->
+                                <!--<li><a href="{:url('user/logout')}"><i class="fa fa-sign-out"></i>{:__('Sign out')}</a></li>-->
+                                <!--{else /}-->
+                                <!--<li><a href="{:url('user/login')}"><i class="fa fa-sign-in"></i> {:__('Sign in')}</a></li>-->
+                                <!--<li><a href="{:url('user/register')}"><i class="fa fa-user-o"></i> {:__('Sign up')}</a></li>-->
+                                <!--{/if}-->
+
+                            <!--</ul>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content">
+            {__CONTENT__}
+        </main>
+
+        <footer class="footer ta-c" style="clear:both;background: #1a2033;margin-top: -5px;padding:50px 0 0;height:265px;">
+
+            <div class="w-1200 ta-c" style="margin:0px auto;">
+                <div class="myfl wb-20 ta-l">
+                    <img height="70" src="{$site.Logo}" />
+                </div>
+                <div class="myfl wb-20">&nbsp;</div>
+                <div class="myfl wb-20">
+                    <ul class="ta-l">
+                        <li class="first">{$site.Product}</li>
+                        {foreach :getCategoryList('product',21,5) as $v}
+                            <li><a href="{:url('index/index/detail',['id'=>$v['id']])}">{$v.name}</a></li>
+                        {/foreach}
+                    </ul>
+                </div>
+                <div class="myfl wb-20">
+                    <ul class="ta-l">
+                        <li class="first">{$site['Five-in-one']}</li>
+                        {foreach :getCategoryList('Five-in-one',27,5) as $v}
+                            <li><a href="{:url('index/index/detail',['id'=>$v['id']])}">{$v.name}</a></li>
+                        {/foreach}
+                    </ul>
+                </div>
+                <div class="myfl wb-20">
+                    <ul class="ta-l">
+                        <li class="first">联系方式</li>
+                        {foreach :getConfigGroup('contact') as $v}
+                        <li>{$v.title}：{$v.value}</li>
+                        {/foreach}
+
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+        {include file="common/script" /}
+
+    </body>
+
+</html>

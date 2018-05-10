@@ -1,0 +1,99 @@
+<link href="__CDN__/assets/css/lists.css?v={$Think.config.site.version}" rel="stylesheet">
+
+<div class="pageBanner">
+    <div class="imgDiv"><img src="http://www.huaxunchina.cn/newskin/images/limg1920_4.jpg"></div>
+    <div class="name">{$cate['name']}<em></em></div>
+    <div class="txt">{$cate['description']}</div>
+</div>
+
+<div class="wal">
+    <div class="pageNow"></div>
+    <div class="pageNav1">
+        <div class="list">
+            <ul>
+                {foreach $cates as $v}
+
+                <li><a href="{:url('index/index/lists',['cate'=>$v['type']])}" class="{if $v['type']== $c}aNow{/if}">{$v.name}</a></li>
+
+                {/foreach}
+            </ul>
+            <div class="clear_f"></div>
+        </div>
+    </div>
+    <div class="pageTitle pageTitle2">
+        <div class="txt1">{$cate['name']}</div>
+        <div class="txt2">{$cate['nickname']}</div>
+    </div>
+    <div class="news">
+        <div class="list">
+            <ul>
+                {foreach $lists as $v}
+                <li>
+                    <div class="contentBox">
+                        <div class="timeDiv">
+                            <span>{$v.createtime|date='m-d',###}</span><em>/</em>
+                        </div>
+                        <div class="imgDiv"><img src="{$v.image}" width="340"></div>
+                        <div class="name1"><a href="{:url('index/index/detail',['id'=>$v.id])}" target="_blank">{$v.name}</a></div>
+                        <div class="time"></div>
+                        <div class="content">{$v.description}</div>
+                    </div>
+                </li>
+                {/foreach}
+
+            </ul>
+        </div>
+    </div>
+
+    <!--<div class="network">-->
+        <!--<div class="content1"></div>-->
+        <!--<div class="list">-->
+            <!--<ul>-->
+                <!--<li>-->
+                    <!--<div class="box1">-->
+                        <!--<div class="ico"><img src="http://www.huaxunchina.cn/newskin/images/nimg42_1.jpg"></div>-->
+                        <!--<h2>20余家公司</h2>-->
+                        <!--<p>20余家子公司、分公司<br>（含欧、美、非洲）</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="box1">-->
+                        <!--<div class="ico"><img src="http://www.huaxunchina.cn/newskin/images/nimg42_2.jpg"></div>-->
+                        <!--<h2>一家上市公司</h2>-->
+                        <!--<p>华讯方舟股份（000687.SZ）<br>专注于军事通讯</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="box1">-->
+                        <!--<div class="ico"><img src="http://www.huaxunchina.cn/newskin/images/nimg42_3.jpg"></div>-->
+                        <!--<h2>两家研究院</h2>-->
+                        <!--<p>一家市级太赫兹研究院，一家通信技术研<br>究院（下辖五家分院）</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="box1">-->
+                        <!--<div class="ico"><img src="http://www.huaxunchina.cn/newskin/images/nimg42_4.jpg"></div>-->
+                        <!--<h2>三个研究中心</h2>-->
+                        <!--<p>一个省级研究中心，两个联合研发中心<br>（毫米波-太赫兹辐射源研究中心及无牙<br>联合研究中心）</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="box1">-->
+                        <!--<div class="ico"><img src="http://www.huaxunchina.cn/newskin/images/nimg42_5.jpg"></div>-->
+                        <!--<h2>四个基地</h2>-->
+                        <!--<p>天谷总部（深圳）天谷生产基地（荆州）<br>天谷高铁基地（长春）天谷军民融合创新<br>产业基地（成都）</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div class="box1">-->
+                        <!--<div class="ico"><img src="http://www.huaxunchina.cn/newskin/images/nimg42_6.jpg"></div>-->
+                        <!--<h2>七大事业部</h2>-->
+                        <!--<p>微波通讯事业部、卫星通信产品事业部、<br>卫星通讯运营事业部、太赫兹安检事业<br>部、微电子事业部、湖北制造事业部、教<br>育科技事业部</p>-->
+                    <!--</div>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<div class="clear_f"></div>-->
+        <!--</div>-->
+        <!--<div class="imgDiv"><img src="http://www.huaxunchina.cn/newskin/images/nimg970_1.jpg"></div>-->
+    <!--</div>-->
+</div>

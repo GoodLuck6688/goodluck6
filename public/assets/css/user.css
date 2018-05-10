@@ -1,0 +1,365 @@
+h2.page-header {
+    margin:10px 0  25px 0;
+    padding-bottom:15px;
+}
+*{
+    font-family: "Microsoft YaHei";
+}
+.user-baseinfo {
+    margin-bottom:25px;
+}
+.user-baseinfo table tr td {color:#999;}
+@media (min-width: 767px) {
+    .user-center .avatar-text,.user-center .avatar-img {
+        height:150px;width:150px;border-radius: 150px;line-height:150px;font-size:70px;
+    }
+    .user-center .avatar-img  {font-size:0;}
+    .user-center .avatar-img img {
+        height:150px;width:150px;border-radius:150px;
+    }
+}
+.navbar{
+    height:140px;
+    margin-bottom:0;
+    line-height: 140px;
+}
+.navbar-inverse{
+    background: #fff;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1200px;
+    }
+    .navbar-my{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 1200px){
+    .container {
+        width: 100%;
+    }
+    .navbar-my{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 768px){
+    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+a {
+    color: #3250aa;
+}
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #3250aa;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #666;
+}
+.navbar-inverse .navbar-nav > li > a > strong{
+    font-size: 16px;
+}
+.navbar-inverse .navbar-nav > li > a > span{
+    font-size: 10px;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #3250aa;
+    background-color: transparent;
+}
+main.content{
+    padding: 90px 0 0;
+}
+.w-100{
+    width: 100%;
+}
+.h-700{
+    height:700px;
+}
+.h-750{
+    height:750px;
+}
+.h-540{
+     height:540px;
+}
+.h-400{
+     height:400px;
+}
+.h-880{
+    height:880px;
+}
+.h-600{
+    height:600px;
+}
+.h-250{
+    height: 250px;
+}
+.v600x440{
+    width:600px;
+    height:440px;
+    margin-top: 130px;
+    margin-left: 15px;
+}
+.navbar-inverse .navbar-nav > li > a.active{
+    color:#3250aa;
+}
+#Five-in-one{
+    background: url(../img/fiveinone.jpg);/*url*/
+}
+#Advantage{
+    background: #FFF;//url
+}
+.pd15{
+    padding: 15px 20px;
+}
+.ta-l{
+    text-align: left;
+}
+.ta-r{
+    text-align: right;
+}
+.ta-c{
+    text-align: center;
+}
+.v600x440 h1{
+    color:#3250aa;
+    font-weight: 600;
+}
+.v600x440 p{
+    margin:40px 0;
+    line-height: 30px;
+}
+.v600x440 h1 span{
+    font-size: 18px;
+}
+.btn-mybtn{
+    border:1px solid #3250aa;
+    color: #3250aa;
+    border-radius: 0;
+    background: #fff;
+}
+.pd-lr{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#Five-in-one .row h1{
+    color:#fff;
+    padding-top: 100px;
+    font-weight: 600;
+}
+#Advantage .row h1{
+    color:#3250aa;
+    padding-top: 100px;
+    font-weight: 600;
+}
+#News .row h1{
+    color:#3250aa;
+    padding-top: 100px;
+    font-weight: 600;
+}
+.myfl{
+    float: left;
+}
+.myfr{
+    float: right;
+}
+#Contact .row h1{
+    color:#FFF;
+    padding-top: 80px;
+    font-weight: 600;
+}
+#Five-in-one .row span{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+#Advantage .row span{
+    color:#3250aa;
+    font-size: 18px;
+    font-weight: 600;
+}
+.w-360{
+    width: 360px;
+    margin-right: 60px;
+}
+.wb-20{
+    width:20%;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mr-50{
+    margin-right: 50px;
+}
+.ml--110{
+    margin-left: -115px;
+}
+@media (min-width: 768px){
+    .form-inline .form-control {
+        width: 340px;
+    }
+    .form-inline{
+        width: 100%;
+    }
+}
+.v350x40{
+    width: 350px;
+    height: 40px;
+    margin-right: 8px;
+}
+#Contact .v720x180{
+    width: 700px;
+    height: 180px;
+}
+footer.footer ul li{
+    list-style: none;
+}
+.btn-mybtn-sub{
+    border:1px solid #fff;
+    border-radius: 0;
+    color:#fff;
+    width:180px;
+    height: 40px;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 520px;
+}
+.btn-mybtn-sub:hover{
+    color:#fff;
+}
+.w-1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#News .row span{
+    color:#3250aa;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mr-0{
+    margin-right: 0;
+}
+#Contact .row span{
+    color:#FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+#Contact{
+    background: url(../img/Contact.jpg);
+}
+.h-460{
+    height: 460px;
+}
+#Advantage .row .v1200x540 p{
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+#News .row .v1200x540 p{
+    margin-top: 20px;
+    height:90px;overflow: hidden;
+    line-height: 30px;
+    font-size: 14px;
+}
+#Five-in-one .row .v1200x540{
+    margin-top: 45px;
+}
+#Five-in-one .row .v1200x540 table,#Advantage .row .v1200x540 table{
+    width:100%;
+}
+#Five-in-one .row .v1200x540 table td{
+    width:20%;
+    border-right: 1px solid #dccec6;
+    float:left;
+    height:40px;
+    line-height: 40px;
+    font-size: 20px;
+    color:#3250aa;
+    font-weight: 600;
+    background: #fff;
+    position: relative;
+}
+#Five-in-one .row .v1200x540 .tactive {
+    background: #3250aa;
+    color:#fff;
+}
+
+.fa-caret-down{
+    position: absolute;
+    top: 32px;
+    left: 115px;
+    color:#3250aa;
+    z-index: 1000;
+}
+#Advantage .row .v1200x540 .title{
+     width:25%;
+     border-right: 1px solid #dccec6;
+     float:left;
+     height:110px;
+     line-height: 40px;
+     font-size: 20px;
+     color:#3250aa;
+     font-weight: 600;
+     background: #fff;
+     margin-top: 110px;
+}
+#Advantage .row .v1200x540 table :last-child{
+    border-right: none;
+}
+
+
+#Five-in-one .row .v1200x540 table > td .fa-caret-down{
+    position: absolute;
+    bottom: -8px;
+}
+#Standard .v600x440{
+    margin-top: 0;
+}
+#Standard ul a{
+    color:#000;
+}
+#Standard ul a:hover{
+    color:#3250aa;
+}
+
+#Standard ul {
+    margin-bottom: 30px;
+}
+#Standard li {
+    margin-left: -25px;
+    height: 30px;
+    line-height: 30px;
+}
+#Contact1 .v600x440{
+    margin-top: 40px;
+    width:90%;
+}
+footer.footer ul li{
+    font-weight: 500;
+    font-size: 14px;
+    color:#fff;
+    line-height: 30px;
+}
+
+footer.footer ul li a,footer.footer ul li a:hover,footer.footer ul li a:focus{
+    color:#fff;
+}
+footer.footer ul li.first{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+

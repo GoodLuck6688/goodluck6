@@ -1,0 +1,267 @@
+<link rel="stylesheet" href="__CDN__/assets/css/swiper.min.css">
+<script src="__CDN__/assets/js/swiper.min.js"></script>
+
+<div class="w-100 h-700" id="Homepage">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {foreach :getCategoryList('ads',16) as $v}
+
+                <div class="swiper-slide">
+                    <a href="{$v.link}">
+                    <img class="w-100 h-700" src="{$v.image}" />
+                    </a>
+                </div>
+
+            {/foreach}
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div id="Product" class="container w-100 h-700" >
+    <div class="row ">
+        <div class="col-md-6 ta-r pd-lr">
+            <video src="http://www.w3school.com.cn/i/movie.ogg" class="v600x440" controls="controls">
+
+            </video>
+        </div>
+        <div class="col-md-6 ta-l pd-lr">
+            <div class="v600x440 pd15">
+                <!--<a class="color-0" href="{:url('index/index/lists',['cate'=>$product['type']])}">-->
+                <h1>{$product.nickname} <span>{$product.name}</span></h1>
+                <p>
+                    {$product.description}
+                </p>
+                <!--</a>-->
+                <a href="{:url('index/index/lists',['cate'=>$product['type']])}" class="btn btn-mybtn">learn more &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Five-in-one"  class="w-100">
+    <div class="container h-880" >
+        <div class="row">
+            <div class="col-md-12 pd-lr">
+                <div class="w-100 ta-c">
+                    <!--<a href="{:url('index/index/lists',['cate'=>$Fiveinone.type])}">-->
+                        <h1 class="">{$Fiveinone.nickname} </h1>
+                        <span>{$Fiveinone.name}</span>
+                    <!--</a>-->
+                    <div class="v1200x540">
+                        <table>
+                            <tr>
+                                {foreach $fives as $k => $v}
+                                <td class="{if $k == 0}tactive{/if}" data-index="{$k}" id="title{$v.id}">
+                                    {$v.name}
+                                    <i class="fa fa-caret-down {if $k != 0}hide{/if}" id="fa{$v.id}"></i>
+                                </td>
+                                {/foreach}
+                            </tr>
+                        </table>
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                {foreach $fives as $v}
+
+                                <div class="swiper-slide" id="{$v.id}">
+                                    <!--<a href="{:url('index/index/detail',['id'=>$v.id])}">-->
+                                        <img class="w-100 h-540" src="{$v.image}" />
+                                    <!--</a>-->
+                                </div>
+
+                                {/foreach}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="Advantage"  class="w-100">
+    <div class="container h-600" >
+        <div class="row">
+            <div class="col-md-12 pd-lr">
+                <div class="w-100 ta-c">
+                    <!--<a href="{:url('index/index/lists',['cate'=>$Advantage.type])}">-->
+                    <h1 class="">{$Advantage.nickname}</h1>
+                    <span>{$Advantage.name}</span>
+                    <!--</a>-->
+                    <div class="v1200x540 ta-c">
+                        <p>
+                            {$Advantage.description}
+                        </p>
+
+                        <table>
+                            <tr>
+                                {foreach $Advantages as $v}
+                                <td class="title tactive">
+                                    <!--<a href="{:url('index/index/detail',['id'=>$v.id])}">--><img width="70" height="70" src="{$v.image}" /><br>
+                                    {$v.name}
+                                    <!--</a>-->
+                                </td>
+                                {/foreach}
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+
+<div id="Standard" class="container w-100 h-400" >
+    <div class="row ">
+        <div class="col-md-6 ta-r pd-lr">
+            <img height="400" width="100%" src="{$Standard.image}" />
+        </div>
+        <div class="col-md-6 ta-l pd-lr">
+            <div class="v600x440 pd15">
+                <!--<a class="color-0" href="{:url('index/index/lists',['cate'=>$Standard['type']])}">-->
+                <h1>{$Standard.nickname} <span>{$Standard.name}</span></h1>
+                <!--</a>-->
+                <p></p>
+                    <ul style="list-style: none;">
+                        {foreach $Standards as $v}
+                        <li><a href="{:url('index/index/detail',['id'=>$v.id])}">{$v.name}</a></li>
+                        {/foreach}
+                    </ul>
+
+
+                <a href="{:url('index/index/lists',['cate'=>$Standard['type']])}" class="btn btn-mybtn">learn more &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Contact1" class="container w-100" >
+    <div class="row ">
+        <div class="col-md-4 col-md-offset-2 ta-l pd-lr" style="margin-top: -40px;">
+            <div class="v600x440 pd15">
+                <h1>{$company.nickname} <span>{$company.name}</span></h1>
+                <p>
+                    {$company.description}
+                </p>
+                <a href="{:url('index/index/detail',['id'=>1])}" class="btn btn-mybtn">learn more &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="col-md-6 ta-r pd-lr" style="margin-top: -40px;">
+            <img height="500" width="100%"  src="{$company.image}" />
+        </div>
+    </div>
+</div>
+
+<div id="News"  class="w-100">
+    <div class="container h-750" >
+        <div class="row">
+            <div class="col-md-12 pd-lr">
+                <div class="w-100 ta-c">
+                    <h1 class="">{$article.nickname} </h1>
+                    <span>{$article.name}</span>
+                    <div class="v1200x540 ta-c">
+
+                        <table style="margin-top: 40px;">
+                            <tr>
+                                {foreach $articles as $v}
+
+                                <td class="title">
+                                    <a class="color-0" href="{:url('index/index/detail',['id'=>$v['id']])}">
+                                        <img class="w-360" height="240" src="{$v.image}" /><br>
+                                        <h4 class="w-360 ta-l mt-20"><b>{$v.name}</b></h4>
+                                        <p class="w-360 ta-l mt-20">{$v.description}</p>
+                                    </a>
+                                </td>
+
+                                {/foreach}
+                            </tr>
+                        </table>
+                    </div>
+                </div><br><br>
+                <a href="{:url('index/index/lists',['cate'=>$article['type']])}" class="btn btn-mybtn ta-l">learn more &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="Contact" class="container w-100 h-600" >
+    <div class="row h-600 ta-c">
+        <div class="col-md-12 pd-lr">
+            <div class="w-100 ta-c">
+                <h1 class="">{$contactus.nickname}</h1>
+                <span>{$contactus.name}</span>
+            </div>
+        </div>
+
+        <div class="w-1200 ta-c">
+            <div class="col-md-5 pd-lr ta-l mt-40">
+                <img height="240" width="460" class="mr-50" src="{$contactus.image}" />
+            </div>
+            <div class="col-md-7 ta-l pd-lr mt-40">
+                <div class="h-400">
+                    <form action="#" method="post" class="form-inline">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control v350x40" id="realname" maxlength="20" placeholder="请输出您的姓名">
+                            <input type="number" class="form-control v350x40 mr-0" id="phone" maxlength="11" style="margin-left: 8px;" placeholder="请输出您的电话">
+                        </div>
+                        <br><br>
+                        <textarea class="form-control v720x180" rows="3" id="remark"  placeholder="请输入您的留言，我们会尽快与您联系"></textarea>
+
+                    </form>
+                    <a class="btn btn-mybtn-sub ta-c">提交留言</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Homepage2" class=""></div>
+<div id="Product2" class=""></div>
+<div id="Advantage2" class=""></div>
+<div id="Five-in-one2" class=""></div>
+<div id="Standard2" class=""></div>
+<div id="News2" class=""></div>
+<div id="Contact2" class=""></div>
+<style>
+    .color-0{
+        color:#000;
+    }
+    #Homepage2{
+        position: absolute;
+        top:0px;
+    }
+    #Product2{
+        position: absolute;
+        top:700px;
+    }
+    #Advantage2{
+        position: absolute;
+        top:2280px;
+    }
+    #Five-in-one2{
+        position: absolute;
+        top:1480px;
+    }
+    #Standard2{
+        position: absolute;
+        top:2880px;
+    }
+    #News2{
+        position: absolute;
+        top:3900px;
+    }
+    #Contact2{
+        position: absolute;
+        top:4780px;
+    }
+</style>
+
+
